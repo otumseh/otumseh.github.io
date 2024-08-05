@@ -10,6 +10,10 @@
   img {
     width: 400px;
     height: 400px;
+  }
+  div {
+  display: flex;
+  flex-direction: row;
   }  
 	</style>
 </HEAD>
@@ -59,13 +63,14 @@
       <img src="./Bombay_04.jpg" alt="Image 4">
     </div>
 
-div {
-  display: flex;
-  flex-direction: row;
-}
+
 <div>
-  <audio src="/Rain_on_me.mp3" type="audio/mpeg"></audio>
-  <video src="/OpentheDoor.mp4" type="video/mp4"></video>
+  <audio controls>
+    <source src="/Rain_on_me.mp3" type="audio/mpeg">
+  </audio>
+  <video width="720" height="480" controls>
+    <source src="/OpentheDoor.mp4" type="video/mp4">
+  </video>
   <img src="/Bombay_01.jpg" alt="Image 1">
 </div>
 <!-- </BODY> -->
