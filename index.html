@@ -1,6 +1,14 @@
 <HTML>
 <HEAD> <TITLE>A WEBSITE BY ME</TITLE> <!--</HEAD>-->
 	<style>
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+  }
 	body { 
 	  background-image: url("Bombay.jpg");
 	  background-repeat: no-repeat;
@@ -19,7 +27,9 @@
 </HEAD>
 <!--<BODY background="./BVS.jpg">style="background-color:MediumSeaGreen;"> -->
 <BODY style="background-color:MediumSeaGreen;">
-  <video src="Sleeping.mp4" muted loop autoplay></video>
+  <video autoplay muted loop id="myVideo">
+    <source src="Sleeping.mp4" type="video/mp4">
+  </video>
   <h1>Bombay.</h1>
   <br>
   <p style="color:red"> This is the cutest girl that ever existed. 
